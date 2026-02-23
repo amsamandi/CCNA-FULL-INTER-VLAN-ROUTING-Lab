@@ -27,11 +27,15 @@ Switch connected to router using trunk link.
 Router subinterfaces:
 
 interface g0/0.10
+
 encapsulation dot1Q 10
+
 ip address 192.168.10.1 255.255.255.0
 
 interface g0/0.20
+
 encapsulation dot1Q 20
+
 ip address 192.168.20.1 255.255.255.0
 
 interface g0/0.30
