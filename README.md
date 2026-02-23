@@ -39,12 +39,15 @@ encapsulation dot1Q 20
 ip address 192.168.20.1 255.255.255.0
 
 interface g0/0.30
+
 encapsulation dot1Q 30
+
 ip address 192.168.30.1 255.255.255.0
 
 Switch trunk:
 
 interface fa0/24
+
 switchport mode trunk
 
 ## Verification
@@ -52,7 +55,9 @@ switchport mode trunk
 Commands used:
 
 * show vlan brief
+
 * show interfaces trunk
+
 * show ip route
 
 Connectivity tested using ping between VLANs. All VLANs successfully communicate.
